@@ -55,10 +55,59 @@
     display: block;
 }
 
-.menuheader>ul>li>ul>li a{
+.menuheader>ul>li>ul>li a {
     padding: 3px 0;
     display: block;
     font-size: 12px;
     text-decoration: none;
     color: #707070;
+}
+
+@media (max-width : 90rem) {
+    .menuheader>ul>li>span {
+        display: block;
+        line-height: 40px;
+        cursor: pointer;
+        padding: 0 20px;
+        font-size: 14px;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width : 65rem) {
+    .menuheader>ul>li>span {
+        display: block;
+        line-height: 40px;
+        cursor: pointer;
+        padding: 0 20px;
+        font-size: 13px;
+        line-height: 1.5rem;
+    }
+
+    .menuheader {
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+        border-bottom: 1px solid #cecece;
+        box-shadow: 0 2px 2px -2px #333;
+    }
+}
+
+@media (max-width : 50rem) {
+    .menuheader>ul>li>span {
+        display: block;
+        line-height: 40px;
+        cursor: pointer;
+        padding: 0 20px;
+        font-size: 10px;
+        line-height: 1rem;
+    }
+
+    .menuheader {
+        width: 100%;
+        height: 40px;
+        background-color: #fff;
+        border-bottom: 1px solid #cecece;
+        box-shadow: 0 2px 2px -2px #333;
+    }
 }
