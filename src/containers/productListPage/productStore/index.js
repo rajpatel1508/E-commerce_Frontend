@@ -26,16 +26,16 @@ export default function ProductStore(props) {
                 return (
                     <Card
                         headerLeft={`${slug} mobile under ${priceRange[key]}`}
-                        headerRight={
-                            <MaterialButton
-                                title={"VIEW ALL"}
-                                style={{
-                                    width: "96px",
-                                }}
-                                bgColor="#2874f0"
-                                fontSize="12px"
-                            />
-                        }
+                        // headerRight={
+                        //     <MaterialButton
+                        //         title={"VIEW ALL"}
+                        //         style={{
+                        //             width: "96px",
+                        //         }}
+                        //         bgColor="#2874f0"
+                        //         fontSize="12px"
+                        //     />
+                        // }
                         style={{
                             width: "calc(100% - 40px)",
                             margin: "20px",

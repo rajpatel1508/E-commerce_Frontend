@@ -73,6 +73,12 @@ export default function ProductDetailsPage(props) {
                                     marginLeft: "5px",
                                 }}
                                 icon={<AiFillThunderbolt />}
+                                onClick={() => {
+                                    const { _id, name, price } = product.productDetails;
+                                    const img = product.productDetails.productPictures[0].img;
+                                    dispatch(addToCart({ _id, name, price, img }));
+                                    navigate(`/checkout`)
+                                }}
                             />
                         </div>
                     </div>

@@ -10,6 +10,7 @@ import CartPage from './containers/CartPage';
 import CheckoutPage from './containers/checkoutPage';
 import OrderPage from './containers/OrderPage';
 import OrderDetailsPage from './containers/orderDetailPage';
+import Search from './containers/search';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/order_details/:orderId" element={<OrderDetailsPage />} />
           <Route path="/:productSlug/:productId/p" element={<ProductDetailsPage />} />
           <Route path="/:slug" element={<ProductListPage />} />
+          <Route path="/search/:text" element={<Search />} />
         </Routes>
       </Router>
     </div>

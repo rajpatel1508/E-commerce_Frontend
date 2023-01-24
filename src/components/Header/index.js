@@ -12,7 +12,8 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { login, signout, getCartItems, signup as _signup } from "../../actions";
 import Cart from "../UI/Cart";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import axiosIntance from "../../helpers/axios";
 
 const Header = (props) => {
   const [loginModal, setLoginModal] = useState(false);
@@ -22,8 +23,10 @@ const Header = (props) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
   const auth = useSelector(state => state.auth);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   // state cart value
   const cart = useSelector((state) => state.cart);
@@ -62,6 +65,11 @@ const Header = (props) => {
   // useEffect(() => {
   //   dispatch(getCartItems());
   // }, []);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    navigate(`/search/${searchTerm}`);
+    window.location.reload();
+  }
 
   const renderLoggedInMenu = () => {
     return (
@@ -223,17 +231,23 @@ const Header = (props) => {
           }}
         >
           <div className="searchInputContainer">
-            <input
-              className="searchInput"
-              placeholder={"search for products, brands and more"}
-            />
-            <div className="searchIconContainer">
-              <IoIosSearch
-                style={{
-                  color: "#2874f0",
-                }}
+            <form onSubmit={handleSubmit}>
+              <input
+                className="searchInput"
+                placeholder={"search for products, brands and more"}
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
               />
-            </div>
+              <button type="submit" style={{padding:"10px 12px"}}>
+                <div className="searchIconContainer">
+                  <IoIosSearch
+                    style={{
+                      color: "#2874f0",
+                    }}
+                  />
+                </div>
+              </button>
+            </form>
           </div>
         </div>
         {/* search component ends here */}

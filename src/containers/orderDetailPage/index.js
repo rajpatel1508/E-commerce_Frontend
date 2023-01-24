@@ -11,7 +11,6 @@ import "./style.css";
 
 const OrderDetailsPage = (props) => {
     const dispatch = useDispatch();
-    const location = useLocation()
     const orderDetails = useSelector((state) => state.user.orderDetails);
     let { orderId } = useParams();
     useEffect(() => {
