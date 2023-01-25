@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import flipkartLogo from "../../images/logo/flipkart.png";
 import goldenStar from "../../images/logo/golden-star.png";
-import { IoIosArrowDown, IoIosCart, IoIosSearch } from "react-icons/io";
+import { IoIosArrowDown, IoIosSearch } from "react-icons/io";
 import {
   Modal,
   MaterialInput,
@@ -10,10 +10,9 @@ import {
   DropdownMenu,
 } from "../MaterialUI";
 import { useDispatch, useSelector } from "react-redux";
-import { login, signout, getCartItems, signup as _signup } from "../../actions";
+import { login, signout, signup as _signup } from "../../actions";
 import Cart from "../UI/Cart";
 import { Link, useNavigate } from 'react-router-dom';
-import axiosIntance from "../../helpers/axios";
 
 const Header = (props) => {
   const [loginModal, setLoginModal] = useState(false);
@@ -238,7 +237,7 @@ const Header = (props) => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
               />
-              <button type="submit" style={{padding:"10px 12px"}}>
+              <button className="search-button" type="submit" style={{padding:"10px 12px"}}>
                 <div className="searchIconContainer">
                   <IoIosSearch
                     style={{

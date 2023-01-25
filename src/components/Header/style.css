@@ -75,6 +75,11 @@
     align-items: center;
 }
 
+
+.search-button{
+    position: absolute;
+    right: 0;
+}
 .rightMenu {
     display: flex;
     flex: 1;

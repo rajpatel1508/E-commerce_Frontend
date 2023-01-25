@@ -88,7 +88,7 @@ export default function ProductDetailsPage(props) {
                     <div className="breed">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="/">Home</a>
                                 <IoIosArrowForward />
                             </li>
                             <li>
@@ -96,7 +96,7 @@ export default function ProductDetailsPage(props) {
                                 <IoIosArrowForward />
                             </li>
                             <li>
-                                <a href="#">Samsung</a>
+                                <a href="/Samsung?cid=634103fb4cf8a20f63b75843&type=store">Samsung</a>
                                 <IoIosArrowForward />
                             </li>
                             <li>
@@ -104,6 +104,7 @@ export default function ProductDetailsPage(props) {
                             </li>
                         </ul>
                     </div>
+                    
                     {/* product description */}
                     <div className="productDetails">
                         <p className="productTitle">{product.productDetails.name}</p>
