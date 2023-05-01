@@ -211,7 +211,9 @@ const Header = (props) => {
       </Modal>
       <div className="subHeader">
         {/* Logo  */}
-        <div className="logo">E-BAZAAR</div>
+        <Link to={'/'}>
+          <div className="logo">E-BAZAAR</div>
+        </Link>
         {/* logo ends here */}
 
         {/* search component */}
