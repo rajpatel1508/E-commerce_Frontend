@@ -52,7 +52,7 @@ export default function ProductDetailsPage(props) {
                         <div className="flexRow">
                             <MaterialButton
                                 title="ADD TO CART"
-                                bgColor="#ff9f00"
+                                bgColor="#FFB84C"
                                 textColor="#ffffff"
                                 style={{
                                     marginRight: "5px",
@@ -67,7 +67,7 @@ export default function ProductDetailsPage(props) {
                             />
                             <MaterialButton
                                 title="BUY NOW"
-                                bgColor="#fb641b"
+                                bgColor="#F16767"
                                 textColor="#ffffff"
                                 style={{
                                     marginLeft: "5px",
