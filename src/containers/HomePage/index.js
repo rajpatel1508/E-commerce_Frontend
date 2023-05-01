@@ -70,7 +70,7 @@ export default function HomePage() {
                 </div>
             </div>
             <footer className="footer">
-                <p>&copy;2023 Flipkart-Clone</p>
+                <p>&copy;2023 E-BAZAAR</p>
             </footer>
         </Layout>
     )
