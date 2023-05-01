@@ -211,16 +211,7 @@ const Header = (props) => {
       </Modal>
       <div className="subHeader">
         {/* Logo  */}
-        <div className="logo">
-          <Link to={'/'}>
-            <img src={flipkartLogo} className="logoimage" alt="" />
-          </Link>
-          <Link style={{ textDecoration: 'none' }}>
-            <span className="exploreText">Explore</span>
-            <span className="plusText">Plus</span>
-            <img style={{display:'inline'}} src={goldenStar} className="goldenStar" alt="" />
-          </Link>
-        </div>
+        <div className="logo">E-BAZAAR</div>
         {/* logo ends here */}
 
         {/* search component */}

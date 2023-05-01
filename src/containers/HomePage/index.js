@@ -53,8 +53,8 @@ export default function HomePage() {
                     </video>
                 </div>
                 <div className="banner-text">
-                    <h1>Flipkart Clone</h1>
-                    <p className="my-3 my-xl-3">This project is a clone of the popular e-commerce platform Flipkart, developed using the MERN stack (MongoDB, Express.js, React.js, and Node.js).
+                    <h1>E-Bazaar</h1>
+                    <p className="my-3 my-xl-3">This project is a E-commerce website similar to the popular e-commerce platform Flipkart, developed using the MERN stack (MongoDB, Express.js, React.js, and Node.js).
                         It features a user-friendly interface and allows users to browse and purchase products, create and manage their own accounts and more.
                         The use of the MERN stack allows for efficient and scalable development, with MongoDB as the database, Express.js for the backend, React.js for the frontend, and Node.js as the runtime environment.
                         The project is aimed at providing a similar functionality as Flipkart and the users will be able to have a similar experience as Flipkart.</p>
@@ -63,9 +63,9 @@ export default function HomePage() {
             <div className="about">
                 <div className="container">
                     <div className="aboutin text-sm-start text-center">
-                        <h2 className="mt-3 mb-3">Why Flipkart Clone?</h2>
-                        <p>Flipkart is one of the best and trending eCommerce sites with a presence throughout India. The online shopping website is for Buying and Selling products online within the network.</p>
-                        <p>Flipkart Clone is to showcase FullStack skills of mine as it requires rigorous implementation of multiple complex functionalities.</p>
+                        <h2 className="mt-3 mb-3">Why E-Commerce?</h2>
+                        <p>E-bazaar is similar to Flpkart. Flipkart is one of the best and trending eCommerce sites with a presence throughout India. The online shopping website is for Buying and Selling products online within the network.</p>
+                        <p>E-bazaar is to showcase FullStack skills of mine as it requires rigorous implementation of multiple complex functionalities.</p>
                     </div>
                 </div>
             </div>

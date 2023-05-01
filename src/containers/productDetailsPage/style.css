@@ -81,7 +81,7 @@
 
 .ratingCount {
     display: inline-block;
-    background: #388e3c;
+    background: #A459D1;
     color: #fff;
     font-weight: 400;
     font-size: 12px;
@@ -99,7 +99,7 @@
 
 .extraOffer,
 .discount {
-    color: #388e3c;
+    color: #A459D1;
     font-size: 12px;
     margin: 10px 0px;
     font-weight: 600;
